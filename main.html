@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,122 +7,177 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">Lokesh Rao</a>
-                <div id="menu-toggle">☰</div>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
+                <a href="index.html" class="logo">Lokesh Rao</a>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="toggle-btn">☰</button>
             </nav>
         </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
                 <h1>Hi, I'm Lokesh Rao</h1>
-                <p>A passionate web developer dedicated to creating beautiful, functional, and user-friendly websites. I focus on building responsive and accessible web experiences.</p>
-                <a href="https://github.com/Lokey-pokey/" class="btn">View My Work</a>
+                <p>I'm a programmer with skills in Python, HTML, CSS, and JavaScript and currently studying in Amrita Vishwavidyapeetham.</p>
+                <a href="#contact" class="cta-btn">Get In Touch</a>
             </div>
-            <div class="hero-img">
-                <img src="/api/placeholder/300/300" alt="My face">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Projects</h2>
-                <p>Here's what I've been working on recently</p>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="/api/placeholder/800/500" alt="This Website">
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>My Skills</h2>
                 </div>
-                <div class="project-content">
-                    <h3>This Website</h3>
-                    <p>My personal portfolio website built using HTML, CSS, and JavaScript. Features responsive design, smooth animations, and a clean user interface to showcase my work and skills effectively.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-                <p>Get to know me better</p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Who I Am</h2>
-                    <p>I'm an aspiring computer science student currently doing my b-tech degree, I want to explore many fields so I can offer a unique set of skills when it comes to solving real world problems.</p>
-                    <div class="skills">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Python</span>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>My Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">This Website</h3>
+                            <p class="project-description">A responsive portfolio website created to showcase my skills and projects. Features include dark mode toggle, smooth animations, and a clean, modern design.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                        <p><i>📧</i> lokesh312xx6@gmail.com</p>
+                        <p><i>📱</i> +91 9676581118</p>
+                        <p><i>📍</i> Hyderabad, Telangana, India</p>
+                    </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Lokesh Rao</h3>
-                    <p>An aspiring computer science student.</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/lokesh-g-rao-055445253/" title="LinkedIn">💼</a>
-                    </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/lokesh-g-rao-055445253" class="social-link" target="_blank">in</a>
                 </div>
-                
-                <div class="footer-section">
-                    <h3>Connect With Me</h3>
-                    <p>Email: lokesh312xx6@gmail.com</p>
-                    <p>Location: Hyderabad, Telangana, Indiay</p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; Made by Lokesh Rao in 2025</p>
+                <p class="copyright">©By Lokesh G Rao, 2025</p>
             </div>
         </div>
     </footer>
 
+    <div class="theme-toggle" id="themeToggle">
+        🌓
+    </div>
+
     <script>
-        // Simple JavaScript for mobile menu toggle
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
+        // Mobile Menu Toggle
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
         });
         
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
                 
-                // Close mobile menu if open
-                document.querySelector('.nav-links').classList.remove('active');
+                if (targetElement) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
             });
+        });
+        
+        // Dark mode toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        // Check if user has a preferred theme
+        if (localStorage.getItem('darkMode') === 'true') {
+            body.classList.add('dark-mode');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
         });
     </script>
 </body>
